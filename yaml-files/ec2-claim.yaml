@@ -1,0 +1,13 @@
+---
+apiVersion: compositions.io/v1alpha1
+kind: Instance
+metadata:
+  name: "ec2"
+spec:
+  parameters:
+    region: "us-east-1"
+    ami: "ami-0e670eb768a5fc3d4"
+    instanceType: "t2.medium"
+    keyName: "keys"
+  compositionRef:
+    name: ec2-instance
